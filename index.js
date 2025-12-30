@@ -11,13 +11,16 @@ require('./database/db')
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
-    method:["POST","GET"]
+    origin:"*",
+    method:["POST","GET"],
+    credentials:true
 }));
 
 app.use(route);
 
 
 //server is running
-app.listen(process.env.PORT,()=>{
-console.log("server is running",process.env.PORT)
-;})
+// app.listen(process.env.PORT,()=>{
+// console.log("server is running",process.env.PORT)
+// ;})
+module.exports = app;
