@@ -23,7 +23,6 @@ app.use(route);
 
 
 //server is running
-// app.listen(process.env.PORT,()=>{
-// console.log("server is running",process.env.PORT)
-// ;})
-module.exports = app;
+app.listen(process.env.PORT,()=>{
+console.log("server is running",process.env.PORT)
+;})
