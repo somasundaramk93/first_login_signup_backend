@@ -1,4 +1,5 @@
 const User = require("../models/autenticate.model");
+
 const signup=async (req, res) => {
   try {
     await connectDB();
