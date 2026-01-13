@@ -24,3 +24,7 @@ It supports user signup and login with secure password handling.
 ```bash
 npm install
 npm start
+### Auth Endpoints
+```http
+POST /api/auth/signup
+POST /api/auth/login
